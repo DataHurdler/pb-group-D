@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Builds materials/syllabus.docx and materials/agenda.docx on UNO's
-General Document template (materials/brand/uno-template-general-document.docx).
+"""Builds syllabus.docx and agenda.docx on UNO's General Document template
+(build/brand/uno-template-general-document.docx).
 
 The template's cover page, headers, footers (including the University of
 Nebraska non-discrimination statement), styles, and theme are kept as they are;
 only the body is replaced. Standard library only:
 
-    python3 tools/build-materials/build-docs.py
+    python3 build/build-docs.py
 
 Markup in the content below:
     **bold**    {{placeholder}} (highlighted yellow, for the organizer to fill in)
@@ -18,8 +18,8 @@ import zipfile
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-ROOT = Path(__file__).resolve().parents[2]
-TEMPLATE = ROOT / "materials/brand/uno-template-general-document.docx"
+ROOT = Path(__file__).resolve().parents[1]
+TEMPLATE = Path(__file__).resolve().parent / "brand/uno-template-general-document.docx"
 WIDTH = 10224  # usable width in twips: 8.5in page minus two 0.7in margins
 W_NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"'
 
@@ -210,6 +210,17 @@ def build(out, doc, header_text, cover=None, first_page_top=None, bottom_margin=
 
 
 # ------------------------------------------------------------------ syllabus
+# The course description and learning objectives are copied word for word from
+# CHARTER.md, where they are marked as approved.
+OBJECTIVES = [
+    "Explain how large language models use prompts and context to generate responses.",
+    "Write clear, structured prompts that produce more useful and relevant outputs.",
+    "Apply prompting techniques to improve accuracy, consistency, format, and usefulness.",
+    "Refine prompts through iterative testing and evaluation.",
+    "Use prompting strategies that improve efficiency while maintaining output quality.",
+]
+
+
 def syllabus():
     d = Doc()
     d.p("Course Syllabus", style="Title", after=200)
@@ -219,7 +230,7 @@ def syllabus():
         ["Course title", "Prompt Engineering Essentials: Getting Reliable Results from Google Gemini"],
         ["AI tool", "Google Gemini (gemini.google.com)"],
         ["Format", "In-person, hands-on workshop, one day"],
-        ["Date and time", "{{Date}}, 9:00 a.m. – 4:00 p.m. (6 contact hours; 60-minute lunch break)"],
+        ["Date and time", "{{Date}}, 9:00 a.m. – 4:00 p.m. (about six hours of class, plus lunch and two short breaks)"],
         ["Location", "{{Building and room}}, University of Nebraska at Omaha"],
         ["Instructor", "{{Instructor name}}"],
         ["Contact", "{{Email}}  ·  {{Phone}}"],
@@ -228,112 +239,92 @@ def syllabus():
     ], [2400, 7824], header=False, size=22, label_col=True)
 
     d.h1("Course Description")
-    d.p("Google Gemini can draft, summarize, and organize information in seconds, but the quality of what it "
-        "produces depends on how it is asked. This one-day, hands-on workshop teaches working professionals with "
-        "little or no AI experience how to write prompts that get useful, reliable results from Gemini, and how "
-        "to use it responsibly at work.")
-    d.p("Participants learn how large language models generate text and why they sometimes get things wrong; "
-        "practise the five elements of an effective prompt (the CRAFT framework, which matches Google's own "
-        "Gemini prompting guidance); apply prompt engineering techniques such as examples, grounding in source "
-        "material, and step-by-step refinement; and learn to check Gemini's output and protect sensitive "
-        "information. Nearly half of the day is spent working directly in Gemini. Each participant leaves with a "
-        "tested, reusable prompt saved in their own Gemini account.")
+    d.p("The quality of results produced by generative AI often depends on the quality of the instructions it "
+        "receives. Effective prompt design helps users communicate their intent clearly, provide appropriate "
+        "context, establish constraints, and guide large language models (LLMs) toward more useful outputs.")
+    d.p("In this hands-on course, participants will learn practical techniques for designing, testing, and "
+        "refining prompts for workplace applications. Participants will explore how prompt structure influences "
+        "AI-generated responses and how thoughtful prompt design can improve quality, consistency, and efficiency.")
+    d.p("All exercises in this offering use **Google Gemini**. The techniques apply to any AI chat tool.")
 
     d.h1("Who This Course Is For")
     d.bullets([
-        "Professionals in any field (business, education, healthcare, government, nonprofit) who have access to Gemini and want to use it in their daily work",
-        "No AI, data science, or programming experience is needed",
-        "Participants should be comfortable using a web browser and writing everyday workplace documents such as emails, reports, and summaries",
+        "Working professionals in mixed roles who have access to Gemini",
+        "No programming is assumed or taught",
     ])
 
-    d.h1("Learning Outcomes")
-    d.p("By the end of the workshop, participants will be able to:", after=80)
-    d.bullets([
-        "**Explain** in plain language how Gemini generates responses, and name four limitations that affect how to use it.",
-        "**Write** prompts that include the five CRAFT elements: context, role, ask, format, and tone & audience.",
-        "**Improve** a Gemini response using prompt engineering techniques: examples, fenced source text, grounding rules, and follow-up refinement.",
-        "**Evaluate** Gemini's output for accuracy and completeness, and decide what information is safe to share with it, given the account in use.",
-        "**Build, test, and save** a reusable prompt for a recurring task in their own work.",
-    ], numbered=True)
+    d.h1("Learning Objectives")
+    d.p("By the end of the course, participants will be able to:", after=80)
+    d.bullets(OBJECTIVES, numbered=True)
 
-    d.h1("Course Materials and Technology")
+    d.h1("What You Need")
     d.bullets([
-        "**A laptop or tablet** with a current web browser, and a charger.",
+        "**A laptop** with a current web browser, and a charger.",
         "**Access to Google Gemini** at gemini.google.com. Use your work or school Google account if your "
-        "organization provides Gemini with it; otherwise a personal Google account works. No paid plan is "
-        "needed. Please sign in and try it before the workshop.",
-        "**The Participant Workbook**, provided by the instructor in print and digital form. It contains every "
-        "exercise, source text, and the capstone template, ready to copy into Gemini.",
-        "**Slides and resources**, shared with participants after the workshop.",
+        "organization provides Gemini with it; otherwise a personal Google account works. No paid plan, file "
+        "uploads, or installation is needed. Please sign in and try it before the course.",
+        "**The Participant Workbook**, provided by the instructor. It contains every exercise and source text.",
     ])
-    d.p("Wi-Fi is provided. If you can't set up an account beforehand, arrive at 8:30 a.m. and we'll help you.")
 
     d.h1("Schedule")
     d.table([
         ["Time", "Session", "Topics and activities"],
-        ["9:00 – 9:30", "Welcome and orientation", "Introductions; pre-check; ground rules; signing in to Gemini"],
-        ["9:30 – 10:30", "01  Foundations", ["How Gemini generates text, and four limits: fabrication, inconsistency, limited knowledge, privacy. The CRAFT framework.", "**Activities:** Poke Gemini; Prompt makeover"]],
+        ["9:00 – 9:30", "Setup", "Course overview; signing in to Gemini"],
+        ["9:30 – 10:30", "1  Foundations", ["How LLMs use prompts and context; four limits to plan for; the CRAFT framework (context, role, ask, format, tone & audience).", "**Activities:** Poke Gemini; Prompt makeover"]],
         ["10:30 – 10:45", "Break", ""],
-        ["10:45 – 12:00", "02  Core skills", ["Examples, fenced source text, grounding rules, and output structure; refining results with five follow-up moves.", "**Activities:** Grounded summary; Four turns to great"]],
+        ["10:45 – 12:00", "2  Techniques", ["Examples, fenced source text, grounding rules, and output structure; refining results with follow-up prompts.", "**Activities:** Grounded summary; Four turns to great"]],
         ["12:00 – 1:00", "Lunch", ""],
-        ["1:00 – 2:15", "03  Applied practice", ["Work versus personal Gemini accounts; checking what you paste (the data traffic light); verifying what you get.", "**Activity:** Group case on communicating a hybrid work pilot; gallery walk"]],
+        ["1:00 – 2:15", "3  Use it responsibly", ["What's safe to paste, by data type and account type; verifying output.", "**Activity:** Group case on communicating a hybrid work pilot"]],
         ["2:15 – 2:30", "Break", ""],
-        ["2:30 – 3:30", "04  Capstone", "Build, test, and revise a reusable prompt for your own work, and save it in Gemini; share-outs"],
-        ["3:30 – 4:00", "05  Wrap-up", "Review; post-check; personal action plan; course feedback"],
+        ["2:30 – 3:30", "4  Capstone", "Build, test, refine, and save a reusable prompt for a task from your own job"],
+        ["3:30 – 4:00", "Review", "Summary and questions"],
     ], [1650, 2350, 6224], size=21)
 
-    d.h1("Instructional Approach")
-    d.p("The workshop is built around practice. About 45% of the day is hands-on work in Gemini, 19% is "
-        "discussion, and 22% is short presentations and live demonstrations. No presentation runs longer than "
-        "12 minutes before participants try the idea themselves. Most activities are done in pairs or small "
-        "groups.")
-    d.p("The day is designed to be easy to follow for everyone, including participants who find long "
-        "presentations hard to focus on: the slides carry one idea at a time, every activity is shown on screen "
-        "with numbered steps, a visible timer, and a clear finish line, and the schedule alternates short "
-        "explanations with hands-on work and movement.")
-    d.p("Every exercise uses fictional information about a fictional company, so no real personal or "
-        "organizational data is entered into an AI tool at any point in the course.")
+    d.h1("How the Course Works")
+    d.p("The course is built around practice: short explanations, each followed straight away by hands-on work "
+        "in Gemini, mostly in pairs or small groups. The slides carry one idea at a time, and every activity is "
+        "shown with numbered steps, a time limit, and a clear finish line, so the day is easy to follow for "
+        "everyone, including participants who find long presentations hard to focus on.")
+    d.p("Every exercise uses fictional information about a fictional company. No confidential data (such as "
+        "student, personnel, or health records) goes into any prompt.")
 
-    d.h1("Assessment and Completion")
-    d.p("There are no grades. Participants receive feedback throughout the day from peers and the instructor.", after=80)
-    d.bullets([
-        "**Pre- and post-check.** An anonymous, ungraded eight-question check at the start and end of the day shows what the workshop changed.",
-        "**In-class activities.** Seven hands-on activities, each with clear success criteria.",
-        "**Capstone.** A reusable prompt, tested on two inputs, saved in Gemini, and reviewed against a four-part rubric: CRAFT elements, techniques, evaluation and safety, and reusability.",
-        "**Certificate of completion** {{confirm whether offered}}: awarded for attending the full day and completing the capstone.",
-    ])
+    d.h1("Completion")
+    d.p("There are no grades or tests. Participants check their own learning through the activities and the "
+        "capstone: a tested prompt template for one recurring task from their own job, which a colleague could use "
+        "without help. A checklist for the capstone is in the workbook. A certificate of completion "
+        "{{confirm whether offered}} requires attending the full day and completing the capstone.")
 
     d.h1("Responsible Use of AI")
-    d.p("Responsible use is part of the curriculum. During the workshop and afterwards, participants are asked to:", after=80)
     d.bullets([
-        "Follow their organization's policies on AI tools and data.",
-        "Know which Google account they are using. With a work or school account covered by their "
-        "organization's Gemini license, chats are not used to train Google's models or reviewed by people. With "
-        "a personal Google account, chats may be read by human reviewers and used to improve Google's products.",
-        "Never enter personal, confidential, or regulated information (for example student records, health "
-        "information, personnel matters, customer data, financial information, or passwords) into Gemini unless "
-        "their organization has approved that use.",
-        "Check facts, figures, and claims before using Gemini's output, including any sources it links to, and "
-        "take responsibility for anything they share or publish.",
-        "Be open about AI assistance wherever their organization or profession expects it.",
+        "Follow your organization's policies on AI tools and data.",
+        "Know which Google account you're using. With a work or school account covered by your organization's "
+        "Gemini license, chats are not used to train Google's models or reviewed by people. With a personal Google "
+        "account, chats may be read by human reviewers and used to improve Google's products.",
+        "Never paste personal, confidential, or regulated information into Gemini unless your organization has "
+        "approved that use.",
+        "Check facts, figures, and claims before using Gemini's output, and take responsibility for anything you share.",
     ])
-    d.p("For students enrolled in UNO credit courses, use of AI in coursework is governed by the "
+    d.p("For students in UNO credit courses, AI use in coursework is governed by the "
         "[[UNO Academic Integrity Policy|https://www.unomaha.edu/campus-policies/academic-integrity.php]] "
         "and each instructor's course policy.")
 
-    d.h1("Participation and Attendance")
-    d.p("The workshop is interactive, and each session builds on the one before. Please plan to attend the full "
-        "day and arrive by 9:00 a.m. If you must miss part of the day, let the instructor know in advance. A "
-        "certificate of completion {{confirm whether offered}} requires full attendance.")
+    d.h1("Not Covered in This Course")
+    d.p("These topics are covered by other courses in the series:", after=80)
+    d.bullets([
+        "Introduction to AI and Machine Learning",
+        "Building an AI Agent",
+        "AI Ethics and Governance",
+        "Data Analytics, Cleaning and Visualization in Excel",
+    ])
 
     d.h1("Accessibility")
     d.p("Reasonable disability accommodations are provided for students who are registered with the "
         "Accessibility Services Center (ASC) and make their requests sufficiently in advance. For more "
         "information, contact ASC (Location: 104 HK | 402.554.2872 | unoaccessibility@unomaha.edu).")
-    d.p("Participants who are not UNO students and need an accommodation for this workshop should contact "
-        "{{organizer contact}} at least two weeks before the course date.")
+    d.p("Participants who are not UNO students and need an accommodation should contact {{organizer contact}} "
+        "at least two weeks before the course date.")
 
-    d.h1("Title IX and a Respectful Learning Environment")
+    d.h1("Title IX")
     d.p("UNO seeks to provide an environment that promotes equal opportunity free from discrimination and "
         "harassment. If you have experienced sexual misconduct (sexual assault, dating/domestic violence, "
         "stalking, sexual exploitation, or sexual harassment) we encourage you to make a report. It is important "
@@ -342,23 +333,18 @@ def syllabus():
         "you with resources and reporting options.")
     d.p("Confidential resources and contact details are listed on the "
         "[[UNO Title IX website|https://www.unomaha.edu/university-compliance/civil-rights/title-ix-information/index.php]].")
-    d.p("Participants are expected to treat one another with respect. Conversations about AI can touch on strong "
-        "feelings about work and technology, and all views are welcome.")
 
-    d.h1("Resources After the Course")
+    d.h1("Resources")
     d.bullets([
-        "Your Participant Workbook, including the quick-reference page and your capstone prompt",
         "[[Google Workspace with Gemini prompt guide|https://workspace.google.com/learning/content/gemini-prompt-guide]]",
         "[[Gemini Apps Help: getting started|https://support.google.com/gemini/answer/13275745]]",
         "[[Gemini Apps Privacy Hub|https://support.google.com/gemini/answer/13594961]]",
     ])
-    d.p("This syllabus may change. Participants will be told about any changes before the workshop.",
-        italic=True, before=200, color="636568")
 
-    build(ROOT / "materials/syllabus.docx", d, "PROMPT ENGINEERING ESSENTIALS  |  SYLLABUS",
+    build(ROOT / "syllabus.docx", d, "PROMPT ENGINEERING ESSENTIALS  |  SYLLABUS",
           cover={"title": "Prompt Engineering Essentials",
                  "subtitle": "Getting Reliable Results from Google Gemini",
-                 "statement": "Course Syllabus  |  One-Day Professional Workshop  |  6 Contact Hours",
+                 "statement": "Course Syllabus  |  One-Day Professional Workshop",
                  "line": "University of Nebraska at Omaha"},
           title="Prompt Engineering Essentials: Course Syllabus")
 
@@ -372,29 +358,23 @@ def agenda():
         size=22, after=200)
     d.table([
         ["Time", "Session", "What you'll do"],
-        ["9:00 a.m.", "Welcome", "Meet the group, take a quick ungraded check, and sign in to Gemini"],
-        ["9:30 a.m.", "Foundations", "How Gemini works, where it goes wrong, and the CRAFT framework"],
+        ["9:00 a.m.", "Setup", "Course overview, and sign in to Gemini"],
+        ["9:30 a.m.", "Foundations", "How Gemini uses prompts, its limits, and the CRAFT framework"],
         ["10:30 a.m.", "Break", ""],
-        ["10:45 a.m.", "Core skills", "Techniques for reliable results: examples, source text, follow-ups"],
+        ["10:45 a.m.", "Techniques", "Examples, source text, structure, and follow-up prompts"],
         ["12:00 p.m.", "Lunch", "{{Provided / on your own}}"],
-        ["1:00 p.m.", "Applied practice", "Work through a realistic workplace case in groups, using Gemini safely"],
+        ["1:00 p.m.", "Use it responsibly", "What's safe to paste, checking output, and a group case"],
         ["2:15 p.m.", "Break", ""],
         ["2:30 p.m.", "Capstone", "Build, test, and save a reusable prompt for a task from your own job"],
-        ["3:30 p.m.", "Wrap-up", "Review, personal action plan, and feedback"],
+        ["3:30 p.m.", "Review", "Summary and questions"],
         ["4:00 p.m.", "Finish", ""],
     ], [1500, 2100, 6624], size=21, pad=45)
     d.h2("By the end of the day, you'll be able to")
-    d.bullets([
-        "Explain how Gemini produces answers, and where it goes wrong",
-        "Write clear prompts using the five CRAFT elements",
-        "Use techniques that make Gemini's answers more reliable",
-        "Check Gemini's output, and know what's safe to share",
-        "Build a reusable prompt, and save it in Gemini",
-    ], size=21, after=0)
-    d.p("**Please bring** a laptop or tablet and charger, and your Google account sign-in for Gemini "
+    d.bullets(OBJECTIVES, size=21, after=0)
+    d.p("**Please bring** a laptop and charger, and your Google account sign-in for Gemini "
         "(gemini.google.com). No AI experience is needed. Questions: {{contact}}",
         size=21, before=160, after=0)
-    build(ROOT / "materials/agenda.docx", d, "PROMPT ENGINEERING ESSENTIALS  |  AGENDA",
+    build(ROOT / "agenda.docx", d, "PROMPT ENGINEERING ESSENTIALS  |  AGENDA",
           first_page_top=1850, bottom_margin=2000, title="Prompt Engineering Essentials: Workshop Agenda")
 
 

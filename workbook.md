@@ -6,7 +6,7 @@ can copy the source texts straight into Gemini.
 > **One rule for the whole day:** every name, company, and number in this
 > workbook is fictional. When you practise with your own work later, follow your
 > organization's AI policy, and check which Google account you're using before
-> you paste anything (see the traffic light below).
+> you paste anything (Part 3 covers why).
 
 ---
 
@@ -24,59 +24,9 @@ can copy the source texts straight into Gemini.
 Google changes Gemini's menus often. If something on your screen doesn't match,
 ask the instructor.
 
-## Quick reference
+## Part 1: Foundations
 
-### CRAFT: the five elements of an effective prompt
-
-| | Element | What it tells Gemini | Example |
-| --- | --- | --- | --- |
-| **C** | Context | The situation, background, and purpose | "Our team of 12 is moving from weekly to biweekly status meetings on March 3." |
-| **R** | Role | The perspective or expertise to take | "Act as an experienced internal communications manager." |
-| **A** | Ask | The task, starting with a clear action verb | "Draft an email announcing the change." |
-| **F** | Format | Length, structure, and layout | "Under 150 words, with a subject line and one clear next step." |
-| **T** | Tone & audience | Who will read it and how it should sound | "For busy staff who may worry this means less support. Warm and direct, no jargon." |
-
-### Techniques that make prompts more reliable
-
-| Technique | What to write |
-| --- | --- |
-| Give an example | "Here's an example of the style I want: …" |
-| Fence the source | Put pasted material between markers: `###`, `"""`, or `<notes> … </notes>` |
-| Ground it | "Use only the text between the ### marks. If something isn't stated, write *Not stated*." |
-| Specify the structure | "Return a table with columns: Action, Owner, Due date." |
-| Interview me | "Before you start, ask me up to 5 questions you need answered." |
-| Adjust | "Make it half as long." "Use simpler words." "Write it for a customer instead." |
-| Critique, then revise | "Check your draft against these criteria: … List the weaknesses, then rewrite it." |
-| Break it into steps | "First give me an outline. Wait for my OK before drafting." |
-| Ask for options | "Give me three versions: direct, warm, and persuasive." |
-
-### Before you paste: the data traffic light
-
-| | What it is | What to do |
-| --- | --- | --- |
-| 🟢 **Green** | Public or fictional information | Fine in any Gemini account |
-| 🟡 **Yellow** | Internal but not sensitive: a draft agenda, a generic process | Only in a work or school account covered by your organization's Gemini license. Never in a personal account. |
-| 🔴 **Red** | Personal, confidential, or regulated: names tied to performance or health, student or customer records, financials, passwords | Don't paste it into any account. Remove identifying details or describe the situation in general terms. |
-
-**Why the account matters:** with a work or school account covered by your
-organization's Gemini license, Google doesn't use your chats to train its models
-and people don't review them. With a personal Google account, chats may be read
-by human reviewers and used to improve Google's products, and reviewed chats
-are kept for up to three years even if you delete your activity.
-
-### After you get output: VERIFY
-
-- **Accurate?** Check facts, numbers, and dates against your source.
-- **Complete?** Is anything important missing?
-- **Invented?** Look for names, policies, quotes, or citations that weren't in what you gave it. If Gemini shows a **Sources** button, open the links and check they say what Gemini claims.
-- **Fair and appropriate?** Check tone and bias. Would you put your name on it?
-- **Fit for purpose?** Is it right for the audience and the job?
-
----
-
-## Module 01
-
-### Activity 1.1: Poke the model
+### Activity 1.1: Poke Gemini
 
 **10 minutes, on your own.** Try all three and jot down what you notice.
 
@@ -124,7 +74,7 @@ specific thing that got better.
 
 ---
 
-## Module 02
+## Part 2: Techniques
 
 ### Source text: travel reimbursement memo (used in Activity 2.1)
 
@@ -200,8 +150,8 @@ eighth-grade reading level.
 **Rules**
 
 - Get to a result you'd actually send in **four turns or fewer**.
-- Use **at least two** follow-up moves from the quick reference: interview me,
-  adjust, critique then revise, break into steps, ask for options.
+- Use **at least two** follow-up moves: interview me, adjust, critique then
+  revise, break into steps, ask for options.
 - Copy each prompt into the log below as you go.
 
 | Turn | My prompt | Move used |
@@ -220,7 +170,7 @@ capstone.
 
 ---
 
-## Module 03
+## Part 3: Use it responsibly
 
 ### Case: Prairie Point Logistics' hybrid work pilot
 
@@ -306,11 +256,11 @@ in-office day. Update your FAQ in one follow-up prompt.
 
 ---
 
-## Module 04: Capstone
+## Part 4: Capstone
 
-### Build your reusable prompt template
+### Build a prompt you'll reuse
 
-**35 minutes, on your own or in pairs.**
+**40 minutes, on your own or in pairs.**
 
 1. **Pick a task** you do at least monthly that involves writing, summarizing,
    or organizing information: a meeting recap, status report, customer reply,
@@ -320,12 +270,12 @@ in-office day. Update your FAQ in one follow-up prompt.
 2. **Build the template** using the skeleton below. Put `[PLACEHOLDERS]` where
    the content changes each time.
 3. **Test it on two different inputs.** Use fictional or safe material only.
-4. **Revise once** based on what you saw, and note what you changed.
+4. **Refine it** based on what you saw, and note what you changed.
 5. **Save it in Gemini** as a skill: paste your template and ask *Create a
    skill from this prompt, called [name]*, or use **Settings → Skills**. Test
    it by typing **/** and choosing your skill. (Account still shows Gems? Use
    **Gems → New Gem**. As a last resort, keep it in a Google Doc.)
-6. **Check it against the rubric.**
+6. **Check it against the checklist below.**
 
 ### Template skeleton
 
@@ -354,33 +304,16 @@ BEFORE YOU START: If anything important is unclear, ask me up to
 3 questions first.
 ```
 
-### Rubric
+### Capstone checklist
 
-| Criterion | Not yet | Meets | Strong |
-| --- | --- | --- | --- |
-| **CRAFT elements** | Two or three elements | All five, each specific to the task | Specific and tailored throughout; nothing generic |
-| **Techniques** | None used | At least one technique, used appropriately | Two or more, each addressing a likely failure point |
-| **Evaluation and safety** | Outputs not checked | Both test outputs checked against the source; no sensitive data used | The template itself builds in safeguards, e.g. "Not stated", flagging uncertainty |
-| **Reusability** | Only works for one case | Placeholders for what changes; works on both test inputs; saved in Gemini | A colleague could use it without any explanation |
+Your prompt is ready when:
+
+- [ ] It covers all five CRAFT elements, each specific to your task
+- [ ] It uses at least one technique (example, fenced source, "Not stated" rule, set structure, or interview me)
+- [ ] You tested it on two different inputs and checked both outputs against the source
+- [ ] It has `[PLACEHOLDERS]` for everything that changes, and no sensitive data
+- [ ] It's saved in Gemini, and a colleague could use it without asking you anything
 
 **What I changed after testing:**
 
 &nbsp;
-
----
-
-## Module 05
-
-### My action plan
-
-1. **One thing I'll do with this in the next week:**
-
-   &nbsp;
-
-2. **What might get in the way:**
-
-   &nbsp;
-
-3. **Who or what will help:**
-
-   &nbsp;

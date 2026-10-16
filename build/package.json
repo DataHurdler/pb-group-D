@@ -1,7 +1,7 @@
 {
   "name": "build-materials",
   "private": true,
-  "description": "Builds the slide deck for Prompt Engineering Essentials",
+  "description": "Builds the Prompt Engineering Essentials slides",
   "scripts": {
     "deck": "node build-deck.js",
     "docs": "python3 build-docs.py"
