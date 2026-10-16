@@ -8,6 +8,10 @@ date is set.
 - [ ] Answer every question in [COURSE-BRIEF.md](../COURSE-BRIEF.md)
 - [ ] Write the learning outcomes and check each one maps to a module
 - [ ] Book venue or platform; confirm capacity, projector, Wi-Fi, power at tables
+- [ ] Confirm with the organization's IT team which accounts learners will use
+      for Gemini, and whether those accounts are covered by a Gemini license
+      (this decides what's safe to paste; see module 03)
+- [ ] Confirm the venue network doesn't block gemini.google.com
 - [ ] Open registration. Ask about accessibility and dietary needs on the form.
 - [ ] Find a co-facilitator if you expect more than 20 learners
 
@@ -38,6 +42,20 @@ date is set.
 - [ ] Update outlines with what the dry run taught you, then run
       `python3 tools/check_timing.py`
 - [ ] Brief the co-facilitator: run sheet, activities, who does what
+
+## D − 1 week: check Gemini
+
+Google changes Gemini often. Run through these on the account type your
+learners will use:
+
+- [ ] Every activity and both demos still behave as described
+- [ ] **New chat**, editing a sent prompt, and the **Sources** button are where
+      the workbook says
+- [ ] Saving a prompt works: skills (**Settings → Skills**, or asking Gemini to
+      create one) or, on accounts that still have them, **Gems → New Gem**
+- [ ] The privacy facts on slide 27 still match Google's
+      [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961)
+- [ ] Update the slides, workbook, and module notes for anything that's moved
 
 ## D − 1 week: communicate
 

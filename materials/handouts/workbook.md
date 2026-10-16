@@ -1,20 +1,34 @@
 # Prompt Engineering Essentials: Participant Workbook
 
 Everything you need for today's exercises. Keep this open on your laptop so you
-can copy the source texts straight into your AI tool.
+can copy the source texts straight into Gemini.
 
 > **One rule for the whole day:** every name, company, and number in this
 > workbook is fictional. When you practise with your own work later, follow your
-> organization's AI policy and never paste personal, confidential, or regulated
-> information into a tool your organization hasn't approved.
+> organization's AI policy, and check which Google account you're using before
+> you paste anything (see the traffic light below).
 
 ---
+
+## Getting around Gemini
+
+| To… | Do this |
+| --- | --- |
+| Open Gemini | Go to **gemini.google.com** and sign in |
+| See which account you're in | Click the account picture, top right |
+| Start fresh | Click **New chat**. A new chat doesn't remember earlier ones. |
+| Fix a prompt you already sent | Hover over it and click the pencil to edit it, rather than adding a correction |
+| Check where an answer came from | Click **Sources** under the answer, when it appears, and open the links |
+| Save a prompt to reuse | Ask Gemini: *Create a skill from this prompt*, or go to **Settings → Skills**. Use it later by typing **/** in the prompt box. If your account still shows **Gems** instead, use **Gems → New Gem**. |
+
+Google changes Gemini's menus often. If something on your screen doesn't match,
+ask the instructor.
 
 ## Quick reference
 
 ### CRAFT: the five elements of an effective prompt
 
-| | Element | What it tells the AI | Example |
+| | Element | What it tells Gemini | Example |
 | --- | --- | --- | --- |
 | **C** | Context | The situation, background, and purpose | "Our team of 12 is moving from weekly to biweekly status meetings on March 3." |
 | **R** | Role | The perspective or expertise to take | "Act as an experienced internal communications manager." |
@@ -40,15 +54,21 @@ can copy the source texts straight into your AI tool.
 
 | | What it is | What to do |
 | --- | --- | --- |
-| 🟢 **Green** | Public or fictional information | Fine in any tool |
-| 🟡 **Yellow** | Internal but not sensitive: a draft agenda, a generic process | Only in tools your organization has approved |
-| 🔴 **Red** | Personal, confidential, or regulated: names tied to performance or health, student or customer records, financials, passwords | Don't paste it. Remove identifying details or describe the situation in general terms. |
+| 🟢 **Green** | Public or fictional information | Fine in any Gemini account |
+| 🟡 **Yellow** | Internal but not sensitive: a draft agenda, a generic process | Only in a work or school account covered by your organization's Gemini license. Never in a personal account. |
+| 🔴 **Red** | Personal, confidential, or regulated: names tied to performance or health, student or customer records, financials, passwords | Don't paste it into any account. Remove identifying details or describe the situation in general terms. |
+
+**Why the account matters:** with a work or school account covered by your
+organization's Gemini license, Google doesn't use your chats to train its models
+and people don't review them. With a personal Google account, chats may be read
+by human reviewers and used to improve Google's products, and reviewed chats
+are kept for up to three years even if you delete your activity.
 
 ### After you get output: VERIFY
 
 - **Accurate?** Check facts, numbers, and dates against your source.
 - **Complete?** Is anything important missing?
-- **Invented?** Look for names, policies, quotes, or citations that weren't in what you gave it.
+- **Invented?** Look for names, policies, quotes, or citations that weren't in what you gave it. If Gemini shows a **Sources** button, open the links and check they say what Gemini claims.
 - **Fair and appropriate?** Check tone and bias. Would you put your name on it?
 - **Fit for purpose?** Is it right for the audience and the job?
 
@@ -60,20 +80,20 @@ can copy the source texts straight into your AI tool.
 
 **10 minutes, on your own.** Try all three and jot down what you notice.
 
-1. **Same question, twice.** Open two new chats. In each, ask:
+1. **Same question, twice.** Ask this, then click **New chat** and ask it again:
    *Give me three tips for running a better meeting.*
    Are the answers the same?
 2. **Change one word.** Ask: *Give me three tips for running a shorter meeting.*
    What changed?
 3. **Ask something it can't know.** Ask:
    *What is the parking policy at Prairie Point Logistics' Omaha office?*
-   (Prairie Point Logistics is a fictional company.) Does the AI say it doesn't
+   (Prairie Point Logistics is a fictional company.) Does Gemini say it doesn't
    know, or does it make something up?
 
 **You're done when** you can name one example of inconsistency and one example
-of the AI either inventing something or rightly declining.
+of Gemini either inventing something or rightly declining.
 
-**Finished early?** Ask the AI: *How confident are you in that answer, and how
+**Finished early?** Ask Gemini: *How confident are you in that answer, and how
 could I check it?*
 
 | What I tried | What I noticed |
@@ -95,7 +115,7 @@ could I check it?*
 1. **Diagnose (3 min).** Which CRAFT elements are missing? List them.
 2. **Rewrite (4 min).** Write a new version with all five elements. Make up any
    details you need. They should be fictional.
-3. **Test (3 min).** Run the weak prompt and your rewrite in separate chats.
+3. **Test (3 min).** Run the weak prompt and your rewrite in separate Gemini chats.
    Compare the results.
 4. **Share (3 min).** Which single element made the biggest difference?
 
@@ -108,7 +128,7 @@ specific thing that got better.
 
 ### Source text: travel reimbursement memo (used in Activity 2.1)
 
-Copy everything between the lines into your AI tool, inside markers.
+Copy everything between the lines into Gemini, inside markers.
 
 ```
 PRAIRIE POINT LOGISTICS: MEMO
@@ -161,7 +181,7 @@ Follow these steps:
 7. **Test it:** in the same chat, ask a question the memo doesn't answer, for
    example *Can I expense a rideshare to the airport?*
 
-**You're done when** every bullet can be traced to the memo, and the AI doesn't
+**You're done when** every bullet can be traced to the memo, and Gemini doesn't
 invent an answer to your test question.
 
 **Finished early?** Ask for the same content as a three-question FAQ at an
@@ -194,7 +214,7 @@ eighth-grade reading level.
 **You're done when** you have a final version you'd send and a log that shows
 which moves you used.
 
-**Finished early?** Ask the AI: *Turn this conversation into a single prompt
+**Finished early?** Ask Gemini: *Turn this conversation into a single prompt
 that would get the final result in one go.* You'll do this on purpose in the
 capstone.
 
@@ -259,7 +279,7 @@ that people don't feel singled out.
 
 #### Your deliverables
 
-Use AI to produce all three. Split the work across your group if that helps.
+Use Gemini to produce all three. Split the work across your group if that helps.
 
 1. **Staff FAQ.** Answer all six town-hall questions using only the pilot
    policy. Any question the policy doesn't answer is marked *To confirm with HR*,
@@ -267,8 +287,8 @@ Use AI to produce all three. Split the work across your group if that helps.
 2. **Manager talking points.** No more than eight bullets that help managers
    like Dana answer their team's questions and handle coverage. Don't name any
    individual.
-3. **Verification note.** (a) One thing the AI got wrong or invented, and how
-   you caught it. (b) What you chose **not** to paste into the AI, and why.
+3. **Verification note.** (a) One thing Gemini got wrong or invented, and how
+   you caught it. (b) What you chose **not** to paste into Gemini, and why.
 
 **Roles:** *Navigator* writes the prompts. *Driver* types and runs them.
 *Checker* compares every answer with the source and watches for personal
@@ -277,7 +297,7 @@ information.
 **You're done when**
 
 - [ ] Every FAQ answer is traced to the policy or flagged *To confirm with HR*
-- [ ] No personal information about any individual went into the AI
+- [ ] No personal information about any individual went into Gemini
 - [ ] Your prompts use CRAFT and at least two techniques
 - [ ] Your verification note is complete
 
@@ -301,7 +321,11 @@ in-office day. Update your FAQ in one follow-up prompt.
    the content changes each time.
 3. **Test it on two different inputs.** Use fictional or safe material only.
 4. **Revise once** based on what you saw, and note what you changed.
-5. **Check it against the rubric.**
+5. **Save it in Gemini** as a skill: paste your template and ask *Create a
+   skill from this prompt, called [name]*, or use **Settings → Skills**. Test
+   it by typing **/** and choosing your skill. (Account still shows Gems? Use
+   **Gems → New Gem**. As a last resort, keep it in a Google Doc.)
+6. **Check it against the rubric.**
 
 ### Template skeleton
 
@@ -337,7 +361,7 @@ BEFORE YOU START: If anything important is unclear, ask me up to
 | **CRAFT elements** | Two or three elements | All five, each specific to the task | Specific and tailored throughout; nothing generic |
 | **Techniques** | None used | At least one technique, used appropriately | Two or more, each addressing a likely failure point |
 | **Evaluation and safety** | Outputs not checked | Both test outputs checked against the source; no sensitive data used | The template itself builds in safeguards, e.g. "Not stated", flagging uncertainty |
-| **Reusability** | Only works for one case | Placeholders for what changes; works on both test inputs | A colleague could use it without any explanation |
+| **Reusability** | Only works for one case | Placeholders for what changes; works on both test inputs; saved in Gemini | A colleague could use it without any explanation |
 
 **What I changed after testing:**
 

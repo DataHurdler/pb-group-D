@@ -6,7 +6,7 @@
 | **Outcomes** | LO3, LO4 |
 | **Purpose** | Learners apply CRAFT and the morning's techniques to a messy, realistic case, and practise the two habits of responsible use: checking what they paste, and verifying what they get |
 
-Slides 34–41 of the deck.
+Slides 25–33 of the deck.
 
 No new concepts. The two habits introduced at 13:07 turn limits 1 and 4 from
 module 01 (it makes things up; it isn't a vault) into routines.
@@ -20,10 +20,18 @@ module 01 (it makes things up; it isn't a vault) into routines.
   policy doesn't answer.
 - **Deliverables:** a staff FAQ grounded in the policy, manager talking points
   that name no one, and a verification note.
-- **Two habits (13:07):** the **data traffic light** (green: public or
-  fictional; yellow: internal, approved tools only; red: personal, confidential,
-  or regulated, so don't paste) and the **VERIFY** check (accurate, complete,
-  invented, fair, fit for purpose).
+- **Which account you're in (13:07).** With a work or school account covered
+  by the organization's Gemini license, chats aren't used to train Google's
+  models or reviewed by people. With a personal Google account, chats may be
+  read by human reviewers and used to improve Google's products; reviewed chats
+  are kept up to three years even after deletion. Source: Google's Gemini Apps
+  Privacy Hub and the Workspace with Gemini FAQ. Re-check both the week before
+  you teach.
+- **Two habits:** the **data traffic light** (green: public or fictional, any
+  account; yellow: internal, only in a licensed work or school account; red:
+  personal, confidential, or regulated, never paste) and the **verify** check
+  (accurate, complete, invented, fair, fit for purpose), including opening
+  Gemini's **Sources** links when they appear.
 - **Reference solution:**
   [materials/data/reference-solutions.md](../../materials/data/reference-solutions.md#activity-31-hybrid-pilot-case),
   not shown until 14:05.
@@ -33,7 +41,7 @@ module 01 (it makes things up; it isn't a vault) into routines.
 | Start | Min | Type | Segment |
 | --- | --- | --- | --- |
 | 13:00 | 7 | Hands-on | Energizer: groups stand at flipcharts and write the morning's key ideas from memory |
-| 13:07 | 8 | Lecture | Two habits (data traffic light, VERIFY) and the case brief |
+| 13:07 | 8 | Lecture | Which Gemini account you're in, the data traffic light, verify, and the case brief |
 | 13:15 | 35 | Hands-on | Activity 3.1: hybrid pilot case in groups of 3–4, with a checkpoint at 13:32 |
 | 13:50 | 15 | Discussion | Gallery walk: groups look at each other's work and leave a sticky-note comment |
 | 14:05 | 10 | Lecture | Synthesis: what the strong solutions had in common, and the reference solution |

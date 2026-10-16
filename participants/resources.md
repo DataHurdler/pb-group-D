@@ -5,8 +5,9 @@ follow-up email.
 
 ## Keep practising
 
-- **Use your capstone template this week** on the task you chose, then revise it
-  once more based on what happens.
+- **Use your saved prompt this week.** Type `/` in Gemini to find your skill
+  (or open Gems, if your account still uses them), run it on the task you chose,
+  then revise it once more based on what happens.
 - **Build a second template** for another recurring task. Start from the
   skeleton in the [workbook](../materials/handouts/workbook.md#template-skeleton).
 - **Redo the "Finished early?" extensions** from each activity in the workbook.
@@ -19,17 +20,18 @@ follow-up email.
 - The **quick-reference page** at the front of the
   [workbook](../materials/handouts/workbook.md#quick-reference): CRAFT,
   techniques, the data traffic light, and the verify checklist
-- [OpenAI: Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering)
-- [Anthropic: Prompt engineering overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
-- [Microsoft Copilot help and learning](https://support.microsoft.com/en-us/copilot)
-
-The vendor guides are written partly for developers. The sections on clear
-instructions, examples, and giving the model source material apply to everyone.
+- [Google Workspace with Gemini prompt guide](https://workspace.google.com/learning/content/gemini-prompt-guide):
+  Google's own guide, built on persona, task, context, and format, which line up
+  with CRAFT
+- [Gemini Apps Help: getting started](https://support.google.com/gemini/answer/13275745)
+- [Gemini Apps Privacy Hub](https://support.google.com/gemini/answer/13594961):
+  what Google does with your chats, by account type
 
 ## At work
 
-- Read your organization's AI policy, and find out which tools are approved for
-  internal information.
+- Read your organization's AI policy, and find out whether your work or school
+  Google account is covered by a Gemini license. Only a covered account is
+  suitable for internal information.
 - UNO students: the
   [Academic Integrity Policy](https://www.unomaha.edu/campus-policies/academic-integrity.php)
   and each course syllabus set the rules for AI use in coursework.

@@ -1,11 +1,12 @@
 # Prompt Engineering Essentials
 
 A six-hour, one-day, hands-on workshop that teaches working professionals with
-little or no AI experience how to get reliable, useful results from AI chat
-tools. It covers what makes a prompt effective, the core prompt engineering
-techniques, and how to use AI responsibly at work. Learners spend nearly half the
-day working with an AI tool, and leave with a tested prompt template for their
-own job. All materials follow University of Nebraska at Omaha branding.
+little or no AI experience how to get reliable, useful results from **Google
+Gemini**. It covers what makes a prompt effective, the core prompt engineering
+techniques, and how to use Gemini responsibly at work. Learners spend nearly half
+the day working in Gemini, and leave with a tested prompt saved in their own
+Gemini account. The deck is kept short and simple for learners with limited
+attention spans. All materials follow University of Nebraska at Omaha branding.
 
 ## Start here
 
@@ -13,7 +14,7 @@ own job. All materials follow University of Nebraska at Omaha branding.
 | --- | --- |
 | [materials/syllabus.docx](materials/syllabus.docx) | Course syllabus (UNO General Document template) |
 | [materials/agenda.docx](materials/agenda.docx) | One-page participant agenda (UNO template) |
-| [materials/slides/prompt-engineering-essentials.pptx](materials/slides/prompt-engineering-essentials.pptx) | 52-slide deck in UNO colours, with timed speaker notes |
+| [materials/slides/prompt-engineering-essentials.pptx](materials/slides/prompt-engineering-essentials.pptx) | 43-slide deck in UNO colours, with timed speaker notes |
 | [materials/handouts/workbook.md](materials/handouts/workbook.md) | Participant workbook: every exercise and source text |
 | [COURSE-BRIEF.md](COURSE-BRIEF.md) | Audience, learning outcomes, scope, design choices |
 
@@ -72,7 +73,8 @@ tools/build-materials/ Scripts that generate the deck, syllabus, and agenda
    [participants/emails.md](participants/emails.md).
 2. **Work the checklist.** [instructor/prep-checklist.md](instructor/prep-checklist.md)
    runs from six weeks out. The most important items are a timed dry run and
-   testing the exercises in the AI tools your learners will use.
+   running every exercise in Gemini yourself the week before, because Google
+   changes Gemini's menus and features often.
 3. **Read the module outlines** in `modules/`. Each has the timed plan,
    activity notes, and what to cut if the day runs long. The slides' speaker
    notes match them.
@@ -105,7 +107,7 @@ grep -rn "TODO" --include="*.md" .
 - **One framework, used all day.** CRAFT (Context, Role, Ask, Format, Tone &
   audience) is taught in the first hour and used in every activity after.
 - **Safe by design.** Every exercise uses a fictional company, Prairie Point
-  Logistics, so no real data ever goes into an AI tool during the course.
+  Logistics, so no real data ever goes into Gemini during the course.
 - **New ideas before lunch.** The morning teaches; the afternoon applies.
 - **Every block serves an outcome.** If content doesn't map to an outcome in the
   brief, cut it.

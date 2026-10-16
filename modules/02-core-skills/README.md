@@ -6,7 +6,9 @@
 | **Outcomes** | LO2, LO3 |
 | **Purpose** | Teach two families of technique by worked example, then guided practice: **show and ground** (examples, fenced source text, "use only" rules, output structure) and **iterate** (follow-up moves that turn a first draft into a good one) |
 
-Slides 21–33 of the deck. This is the last block that introduces anything new.
+Slides 17–24 of the deck. This is the last block that introduces anything new. The
+10:45 warm-up and the 11:15 debrief are run from the slide before them, with no
+slide of their own, to keep the deck short.
 
 ## The two skills
 
@@ -14,7 +16,7 @@ Slides 21–33 of the deck. This is the last block that introduces anything new.
   1. **Give an example.** One to three examples of the output you want; the
      model copies the pattern.
   2. **Fence the source.** Paste material between clear markers (`###`, `"""`,
-     `<notes>`) so the AI can tell instructions from content.
+     `<notes>`) so Gemini can tell instructions from content.
   3. **Ground it.** *Use only the text between the markers. If something isn't
      stated, write "Not stated."* This is the single most effective defence
      against made-up details.
@@ -29,8 +31,9 @@ Slides 21–33 of the deck. This is the last block that introduces anything new.
   4. **Break it into steps:** *outline first; wait for my OK*
   5. **Ask for options:** *three versions: direct, warm, persuasive*
 
-  Plus one rule: if a chat goes off the rails, start a new one with a better
-  first prompt.
+  Plus two Gemini habits: edit a prompt you've already sent (the pencil icon)
+  instead of piling on corrections, and if a chat goes off the rails, click New
+  chat and start with a better first prompt.
 - **Worked example for A:** rough meeting notes turned into an action table,
   with a "Not stated" rule
 - **Worked example for B:** four turns to a volunteer-program announcement
@@ -45,7 +48,7 @@ Both demo prompts and their expected outputs are in
 | 10:45 | 3 | Discussion | Recall: name the five CRAFT elements in pairs, without looking |
 | 10:48 | 10 | Demo | Skill A: meeting notes to action table, live, thinking aloud |
 | 10:58 | 17 | Hands-on | Activity 2.1: Grounded summary of the travel memo, in pairs |
-| 11:15 | 5 | Discussion | Debrief: where did the AI invent things, and what stopped it? |
+| 11:15 | 5 | Discussion | Debrief: where did Gemini invent things, and what stopped it? |
 | 11:20 | 10 | Demo | Skill B: four turns to a better announcement |
 | 11:30 | 22 | Hands-on | Activity 2.2: Four turns to great |
 | 11:52 | 8 | Check | Debrief, exit question, preview of the afternoon |

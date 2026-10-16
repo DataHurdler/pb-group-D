@@ -6,23 +6,30 @@
 | **Outcomes** | LO2–LO5 |
 | **Purpose** | Each learner builds, tests, and revises a prompt template for a recurring task from their own work. This is the day's best evidence of learning, and the thing they'll use on Monday. |
 
-Slides 42–46 of the deck.
+Slides 34–38 of the deck.
 
 ## What goes here
 
 - **Task:** pick a task done at least monthly that involves writing,
   summarizing, or organizing information. Build a template using CRAFT and at
   least one technique, with `[PLACEHOLDERS]` for what changes each time. Test it
-  on two different inputs (fictional or safe material only), revise once, and
-  check it against the rubric.
+  on two different inputs (fictional or safe material only), revise once, save
+  it in Gemini as a skill, and check it against the rubric.
 - **Fallback task** for anyone without one: a weekly operations update for
   Prairie Point's warehouse supervisors.
-- **Deliverable:** the template text, saved somewhere the learner will find it
-  again (notes app, document, email to self), plus one sentence on what changed
-  after testing.
+- **Deliverable:** the prompt saved in the learner's own Gemini account, plus
+  one sentence on what changed after testing.
+- **Saving it in Gemini.** Skills are saved prompts called with `/`. Learners
+  create one by pasting the template and asking *Create a skill from this
+  prompt*, or from **Settings → Skills**. Google is replacing Gems with skills:
+  personal accounts from 17 November 2026, Workspace business accounts in March
+  2027, education accounts in June 2027. Until then some work or school
+  accounts show **Gems** instead (**Gems → New Gem** does the same job). If
+  neither is available, a Google Doc is the fallback. Check the current menus
+  the week before you teach.
 - Template skeleton and rubric: in the
   [workbook](../../materials/handouts/workbook.md#module-04-capstone) and on
-  slides 44–45.
+  slides 36–37.
 
 ## Timed outline
 
@@ -40,7 +47,7 @@ Slides 42–46 of the deck.
 | CRAFT elements | LO2 | Two or three elements | All five, each specific to the task | Specific and tailored throughout; nothing generic |
 | Techniques | LO3 | None used | At least one technique, used appropriately | Two or more, each addressing a likely failure point |
 | Evaluation and safety | LO4 | Outputs not checked | Both test outputs checked against the source; no sensitive data used | Safeguards built into the template itself |
-| Reusability | LO5 | Only works for one case | Placeholders for what changes; works on both test inputs | A colleague could use it without explanation |
+| Reusability | LO5 | Only works for one case | Placeholders for what changes; works on both test inputs; saved in Gemini | A colleague could use it without explanation |
 
 ## Facilitation notes
 

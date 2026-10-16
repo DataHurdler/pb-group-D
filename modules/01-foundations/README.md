@@ -1,12 +1,12 @@
-# 01 Foundations: how AI chat tools work, and what makes a good prompt
+# 01 Foundations: how Gemini works, and what makes a good prompt
 
 | | |
 | --- | --- |
 | **When** | 9:30–10:30 |
 | **Outcomes** | LO1, LO2 |
-| **Purpose** | Give learners an accurate mental model of what an AI chat tool does, then the CRAFT framework for writing prompts, and have them use each one straight away |
+| **Purpose** | Give learners an accurate mental model of what Gemini does, then the CRAFT framework for writing prompts, and have them use each one straight away |
 
-Slides 9–20 of the deck.
+Slides 8–16 of the deck.
 
 ## The two concepts
 
@@ -18,11 +18,13 @@ Slides 9–20 of the deck.
      facts, numbers, policies, and citations.
   2. **It's inconsistent.** The same prompt can give different answers, and
      small wording changes shift the result.
-  3. **Its knowledge is limited.** It has a training cutoff, can't see your
-     files or organization unless you give it the information, and starts each
-     new chat fresh (unless the tool has a memory feature).
-  4. **It isn't a vault.** What you type may be stored or used to improve the
-     product. Follow your organization's policy.
+  3. **It doesn't know your world.** Gemini can search Google while it answers,
+     but it can't see your files or organization unless you give it the
+     information, and it can summarise search results wrongly.
+  4. **It isn't a vault.** On a personal Google account, chats may be read by
+     human reviewers and used to improve Google's products. Work or school
+     accounts covered by an organization's Gemini license are protected (module
+     03 covers this).
 
   Mental model to repeat all day: **a brilliant new colleague on their first
   day.** Widely read, knows nothing about your organization or audience, eager
@@ -31,7 +33,7 @@ Slides 9–20 of the deck.
   **R**ole, **A**sk, **F**ormat, **T**one & audience. Not every prompt needs all
   five; the more that's riding on the result, the more you specify.
 - **Hook:** the prompt *Write an email about the meeting* and its generic
-  output. "What did the AI have to guess?"
+  output. "What did Gemini have to guess?"
 
 ## Timed outline
 
@@ -53,12 +55,14 @@ Learner instructions are in the
 
 - **Format:** individual, 10 minutes
 - **Task:** ask the same question in two new chats; change one word; ask about
-  something the AI can't know (the parking policy of fictional Prairie Point
+  something Gemini can't know (the parking policy of fictional Prairie Point
   Logistics)
 - **Done looks like:** each learner can name one example of inconsistency and
-  one example of the AI inventing an answer or rightly declining
-- **Common mistakes to watch for:** re-asking in the same chat (which isn't a
-  fresh start); concluding "it's broken" rather than "it predicts"
+  one example of Gemini inventing an answer or rightly declining
+- **Common mistakes to watch for:** re-asking in the same chat instead of
+  clicking New chat; concluding "it's broken" rather than "it predicts". Gemini
+  may search the web for Prairie Point and report that it found nothing, which
+  is the "rightly declining" case"
 - **Extension:** *How confident are you in that answer, and how could I check
   it?*
 - **Debrief question:** "Who got an invented parking policy? Who got a
@@ -80,7 +84,7 @@ Learner instructions are in the
 Exit question at 10:22, on screen and answered on a sticky note:
 
 > *Write a short, friendly reminder for our volunteers about Saturday's food
-> drive.* What will the AI have to invent, and which CRAFT element is
+> drive.* What will Gemini have to invent, and which CRAFT element is
 > missing?
 
 Answer: the time, place, and what to bring, which means **context** is
@@ -90,7 +94,10 @@ re-running the before-and-after slide instead of the recall question.
 ## Facilitation notes
 
 - Go back to the hook at the end of the block: "you can now fix this email."
-- The next-word chart (slide 11) uses illustrative numbers. Say so.
+- The next-word chart (slide 10) uses illustrative numbers. Say so.
+- CRAFT lines up with Google's own Gemini prompt guide (persona, task, context,
+  format). Saying so helps learners trust the framework, and points them to a
+  Google resource they can use later.
 - Don't get pulled into "is it conscious / will it take my job" during the
   lecture. Park it and come back to it in 05.
 

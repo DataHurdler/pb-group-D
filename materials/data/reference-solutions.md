@@ -1,6 +1,6 @@
 # Reference solutions (instructor only)
 
-Don't share these before the activity they belong to. Outputs from AI tools
+Don't share these before the activity they belong to. Gemini's outputs
 vary from run to run. These show what a good result looks like, not the
 exact wording learners will get.
 

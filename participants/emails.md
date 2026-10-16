@@ -17,18 +17,20 @@ You're registered for **Prompt Engineering Essentials** on **[TODO: date]**, 9:0
 
 **What you'll be able to do by the end of the day**
 
-- Explain how AI chat tools produce answers, and where they go wrong
+- Explain how Gemini produces answers, and where it goes wrong
 - Write clear prompts using the five CRAFT elements
-- Use techniques that make results more reliable
-- Check AI output, and know what's safe to share
-- Build a reusable prompt template for your own work
+- Use techniques that make Gemini's answers more reliable
+- Check Gemini's output, and know what's safe to share
+- Build a reusable prompt, and save it in Gemini
 
 **Please do this before the day.** It takes about 5 minutes:
 
-1. Choose an AI chat tool your organization allows, such as Microsoft Copilot,
-   ChatGPT, Claude, or Gemini. A free account is enough.
-2. Sign in on the laptop or tablet you'll bring, and make sure you know your
-   password.
+1. On the laptop or tablet you'll bring, go to **gemini.google.com** and sign
+   in. Use your work or school Google account if your organization provides
+   Gemini with it; otherwise use a personal Google account. No paid plan is
+   needed.
+2. Make sure you know your password, and that you can get past any two-step
+   verification on the day.
 3. Type *In two sentences, explain what you can help me with at work.* If you
    get a response, you're ready.
 
@@ -64,7 +66,7 @@ A quick reminder that **Prompt Engineering Essentials** is tomorrow, starting at
 
 - If you haven't done the setup steps from last week's email, please do them
   tonight, or arrive at 8:30 for help.
-- Bring your laptop or tablet and charger, and your AI tool sign-in details.
+- Bring your laptop or tablet and charger, and your Google account sign-in for Gemini.
 - We finish at 4:00 pm.
 
 [TODO: name]
@@ -88,9 +90,9 @@ Thank you for yesterday. Here's everything from the day:
 [TODO: answer each question that didn't get a full answer on the day]
 
 **Your action plan.** You wrote down one thing to do with this in the next
-week, probably using your capstone template. If you haven't done it yet, today
-is a good day. Use only information your organization allows in the tool you
-choose.
+week, probably using the prompt you saved in Gemini (type / in Gemini to find
+it). If you haven't done it yet, today is a good day. Remember: on a personal
+Google account, paste only public or fictional information.
 
 [TODO, if you didn't collect feedback in the room: Feedback link, 2 minutes:
 …]

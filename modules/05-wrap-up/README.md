@@ -6,7 +6,8 @@
 | **Outcomes** | Review of all five |
 | **Purpose** | Consolidate the day, measure what changed, commit to a next step, and collect feedback |
 
-Slides 47–52 of the deck.
+Slides 39–43 of the deck. There's no section opener: the summary slide does that
+job.
 
 ## Timed outline
 
@@ -28,8 +29,8 @@ Common parked questions in this course, and short answers:
 - *Will AI take my job?* It changes tasks more than it removes jobs. The
   people who benefit are the ones who know how to direct it and check it, which
   is what today was about.
-- *Which tool is best?* The one your organization approves. Everything today
-  works in all the major tools.
+- *Can I use this in other AI tools?* Yes. CRAFT and the techniques work in
+  any chat tool; only the menus (Sources, skills) are Gemini-specific.
 - *Can I trust it for facts?* Only what you can verify, or what it took from
   source text you gave it.
 
