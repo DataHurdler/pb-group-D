@@ -1,0 +1,16 @@
+{
+  "name": "build-materials",
+  "private": true,
+  "description": "Builds the slide deck for Prompt Engineering Essentials",
+  "scripts": {
+    "deck": "node build-deck.js",
+    "docs": "python3 build-docs.py"
+  },
+  "dependencies": {
+    "pptxgenjs": "3.12.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "5.5.0",
+    "sharp": "0.34.3"
+  }
+}
